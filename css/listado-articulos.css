@@ -1,0 +1,115 @@
+body {
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    --naranja: #d9832e;
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+header {
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+    position: sticky;
+    justify-content: space-between;
+    top: 0%;
+    background-color: white;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.noticia {
+    padding-left: 1%;
+    font-size: 20px;
+    margin-bottom: 2%;
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+img:not(#logo) {
+    height: 80px;
+    width: 80px;
+}
+
+.noticia img:hover {
+    filter: grayscale(20%);
+}
+
+.texto {
+    display: flex;
+    flex-direction: column;
+}
+
+.enlace {
+    font-weight: bold;
+}
+
+.enlace:hover {
+    color: var(--naranja);
+}
+
+#contenedor {
+    width: 80%;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    background-color: #eaedf2;
+}
+
+a {
+    font-weight: bold;
+    color: var(--naranja);
+    text-decoration-color: var(--naranja);
+}
+
+a:hover {
+    color: rgb(122, 65, 45);
+}
+
+a:visited {
+    color: grey;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #111111;
+    color: #828283;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#copyright {
+    text-align: end;
+}
+
+@media screen and (max-width: 350px) {
+    header {
+        padding: 0;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 3px;
+    }
+
+    footer {
+        position: unset;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    header {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
