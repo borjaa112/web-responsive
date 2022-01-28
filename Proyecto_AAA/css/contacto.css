@@ -1,0 +1,139 @@
+body {
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    --naranja: #d9832e;
+    margin: 0;
+}
+
+.boton-naranja {
+    background-color: var(--naranja);
+    color: white;
+    padding-right: 4%;
+    padding-left: 4%;
+    width: 18%;
+    height: 40px;
+}
+
+a {
+    font-weight: bold;
+    color: var(--naranja);
+    text-decoration-color: var(--naranja);
+}
+
+a:hover {
+    color: rgb(122, 65, 45);
+}
+
+a:visited {
+    color: grey;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+header {
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+    position: sticky;
+    justify-content: space-between;
+    top: 0%;
+    background-color: white;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 80vh;
+    background-color: #eaedf2;
+
+}
+
+#contenedor {
+    width: 80%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 20px;
+    border-radius: 1.5%;
+    align-items: center;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #111111;
+    color: #828283;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#copyright {
+    text-align: end;
+}
+
+select:focus {
+    color: green;
+}
+
+input:required {
+    color: red;
+}
+
+input, select {
+    width: 80%;
+    border: none;
+    border-bottom: 1px solid grey;
+    margin-bottom: 15px;
+}
+
+form input~select {
+    color: rgb(67, 81, 119);
+}
+
+textarea {
+    width: 80%;
+}
+
+@media screen and (max-width: 350px) {
+    header {
+        padding: 0;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 3px;
+    }
+
+    footer {
+        position: unset;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    header {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    header {
+        padding: 0;
+    }
+
+    .boton-naranja {
+        width: 38%;
+    }
+}

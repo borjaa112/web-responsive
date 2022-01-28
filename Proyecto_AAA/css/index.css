@@ -1,0 +1,461 @@
+body {
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    --naranja: #d9832e;
+    margin: 0;
+}
+
+#logo{
+    width: 83px;
+}
+
+
+a:hover {
+    color: rgb(122, 65, 45);
+}
+
+a:visited {
+    color: grey;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+header {
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+    position: sticky;
+    justify-content: space-between;
+    top: 0%;
+    background-color: white;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    --tema-gris: #eaedf2;
+}
+
+#hello h1 {
+    margin-top: 0px;
+    font-size: 50px;
+}
+
+#hello-there {
+    margin-bottom: 0px;
+}
+
+#hello img {
+    height: 500px;
+}
+
+.boton-naranja {
+    background-color: var(--naranja);
+    color: white;
+    padding-right: 4%;
+    padding-left: 4%;
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+    height: 40px;
+}
+
+#hire {
+    border: 2px solid var(--naranja);
+    background-color: white;
+    color: #d9832e;
+    padding-right: 4%;
+    padding-left: 4%;
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+    height: 40px;
+}
+
+#about-me, #my-services, #testimonials, #get-in-touch {
+    background-color: var(--tema-gris);
+}
+
+#my-services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#about-me img {
+    height: 400px;
+    margin-bottom: 10px;
+}
+
+#about-datos {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+
+#about-me-izq {
+    margin-right: 80px;
+}
+
+#about-me-derech h3+div {
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+}
+
+#about-me-derech h3 {
+    margin: 0;
+    padding: 0;
+}
+
+.flexbox {
+    display: flex;
+    flex-direction: row;
+}
+
+
+#skills-derech {
+    padding-left: 200px;
+    padding-bottom: 10px;
+    width: 350px;
+    display: grid;
+    grid-template-columns: 40% 40%;
+    grid-template-rows: 50% 50%;
+    row-gap: 10px;
+    column-gap: 10px;
+}
+
+#skills-derech>div {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid orange;
+    border-radius: 5px;
+    align-items: center;
+    padding: 9px;
+}
+
+#skills-derech div img {
+    height: 30px;
+    padding-right: 3px;
+    padding-top: 3px;
+}
+
+#progresos {
+    width: 50%;
+}
+
+#progresos>progress {
+    width: 100%;
+    color: var(--naranja) !important;
+}
+
+
+#grid-cajas {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 2%;
+    row-gap: 2%;
+}
+
+#grid-cajas div {
+    background-color: white;
+    padding: 17px;
+}
+
+#latest-works-imgs img {
+    width: 100%;
+    height: 100%;
+}
+
+#latest-works-imgs {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 20px;
+    column-gap: 20px;
+}
+
+
+.testimonial-box {
+    display: flex;
+    background-color: white;
+    margin: 15px;
+    font-size: 15px;
+}
+
+
+.testimonial-box img {
+    height: 100px;
+    padding: 15px;
+}
+
+#blogs-container {
+    align-content: center;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-row: 100%;
+    column-gap: 3%;
+}
+
+.lastest-blogs-box {
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    font-weight: bold;
+    color: var(--naranja);
+    text-decoration-color: var(--naranja);
+}
+
+#formulario {
+    background-color: white;
+    border-radius: 5px;
+    padding-left: 35px;
+    padding-right: 35px;
+}
+
+form .boton-naranja {
+    margin-top: 25px;
+}
+
+#formulario h3 {
+    padding: 0;
+    margin: 0;
+}
+
+input {
+    border: 0;
+    border-bottom: 1px solid grey;
+    width: 300px;
+    margin-top: 25px;
+}
+
+#subject {
+    width: 610px;
+}
+
+input:focus {
+    color: var(--naranja);
+}
+
+input:enabled {
+    background-color: white;
+}
+
+textarea {
+    border: 0;
+    border-bottom: 1px solid grey;
+    margin-top: 35px;
+    width: 610px;
+    height: 80px;
+}
+
+#info-adicional div {
+    margin-left: 25px;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 25% 70%;
+    grid-template-rows: auto auto auto;
+    margin-bottom: 15px;
+}
+
+#info-adicional img {
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+#contenedor {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-row: auto;
+}
+
+footer {
+    background-color: #111111;
+    color: #828283;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#copyright {
+    text-align: end;
+}
+
+.contenedor {
+    width: 80%;
+}
+
+#hello .flexbox div {
+    width: 60%;
+}
+
+/* Media queries */
+
+@media screen and (max-width: 350px) {
+    header {
+        padding: 0;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 3px;
+    }
+
+    footer {
+        position: unset;
+    }
+
+    .testimonial-box {
+        margin-left: 2px;
+        margin-right: 2px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    header {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+@media screen and (min-width: 100px) and (max-width: 500px) {
+    .flexbox {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header {
+        padding: 0;
+    }
+
+    .contenedor {
+        width: 90%;
+    }
+
+    #hello img {
+        width: 200px;
+        height: auto;
+    }
+
+    #about-me img {
+        background-color: white;
+        padding: 1.5%;
+        height: 200px;
+        margin-bottom: 10px;
+    }
+
+    #progresos {
+        width: 70%;
+    }
+
+    #skills-derech {
+        padding: 0;
+        padding-top: 20px;
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+    }
+
+    #grid-cajas {
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto auto auto;
+    }
+
+    #testing, #options {
+        margin-bottom: 50px;
+    }
+
+    #latest-works-imgs {
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto auto auto;
+
+    }
+
+    .testimonial-box {
+        flex-direction: column;
+        padding: 5px;
+    }
+
+    #blogs-container {
+        grid-template-columns: 100%;
+    }
+
+    #formulario {
+        width: 100%;
+    }
+
+    input, textarea, #subject {
+        width: 100%;
+    }
+
+    #info-adicional div {
+        margin-left: 0px;
+        margin-top: 20px;
+    }
+
+    #info-adicional img {
+        margin-top: 15px;
+        margin-left: 10px;
+    }
+
+}
+
+@media screen and (min-width: 500px) and (max-width: 1000px) {
+    #hello img {
+        width: 300px;
+        height: 300px;
+        justify-content: center;
+    }
+
+    .contenedor {
+        width: 90%;
+    }
+
+    #about-me-izq {
+        margin-right: 40px;
+    }
+
+    #about-me-izq img:first-child {
+        height: 200px;
+    }
+
+    #skills-derech {
+        padding-left: 50px;
+        width: 450px;
+    }
+
+    #latest-works-imgs {
+        grid-template-columns: 30% 30% 30%;
+    }
+
+    .testimonial-box {
+        margin-left: 0;
+        padding: 5px;
+    }
+
+    #formulario {
+        width: 70%;
+    }
+
+    input, textarea, #subject {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1100px) {
+    #formulario {
+        width: 70%;
+    }
+
+    input, textarea, #subject {
+        width: 100%;
+    }
+}
